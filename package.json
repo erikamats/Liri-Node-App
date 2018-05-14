@@ -1,0 +1,29 @@
+{
+  "name": "Liri-Node-App",
+  "version": "1.0.0",
+  "description": "",
+  "main": "liri.js",
+  "dependencies": {
+    "dotenv": "^5.0.1",
+    "fs": "0.0.1-security",
+    "node-spotify-api": "^1.0.7",
+    "npm": "^6.0.1",
+    "request": "^2.85.0",
+    "twitter": "^1.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/erikamats/Liri-Node-App.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/erikamats/Liri-Node-App/issues"
+  },
+  "homepage": "https://github.com/erikamats/Liri-Node-App#readme"
+}
