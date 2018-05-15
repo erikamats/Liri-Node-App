@@ -84,7 +84,7 @@ function music() {
 
 function noMusic() {
 
-    spotify.search({ type: 'track', query: sign, limit: 5 }, function (err, data) {
+    spotify.search({ type: 'track',  query:'Ace of Base',  limit: 5 }, function (err, data) {
         if (err) {
             return console.log('Error occurred: ' + err);
         }
@@ -92,22 +92,22 @@ function noMusic() {
             // Artist(s)
             console.log("=====================");
             console.log("This is the Artist:");
-            console.log(data.tracks.items[1].artists[0].name);
+            console.log(data.tracks.items[0].artists[0].name);
 
             // The song's name
             console.log("=====================");
             console.log("This is the Song:");
-            console.log(data.tracks.items[1].name);
+            console.log(data.tracks.items[0].name);
 
             // A preview link of the song from Spotify
             console.log("=====================");
             console.log("Preview link below");
-            console.log("Preview: " + data.tracks.items[1].preview_url);
+            console.log("Preview: " + data.tracks.items[0].preview_url);
 
             // The album that the song is from
             console.log("=====================");
-            console.log("The Album Name");
-            console.log(data.tracks.items[1].album.name);
+            // console.log("The Album Name");
+            // console.log(data.tracks.items[0].album.name);
 
     });
 }
